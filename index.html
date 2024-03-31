@@ -176,7 +176,7 @@
           <ul class="ingredients-list">
             <li class="ingredients-item">
               <div class="ingredients-wrapper">
-                <svg width="24" height="24">
+                <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -191,7 +191,7 @@
             </li>
             <li class="ingredients-item">
               <div class="ingredients-wrapper">
-                <svg width="24" height="24">
+                <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -206,7 +206,7 @@
             </li>
             <li class="ingredients-item">
               <div class="ingredients-wrapper">
-                <svg width="24" height="24">
+                <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -220,8 +220,8 @@
               <h3 class="ingredients-list-title">NUTS</h3>
             </li>
             <li class="ingredients-item">
-              <div class="ingredients-wrapper">
-                <svg width="24" height="24">
+              <div class="ingredients-wrapper" class="ing-wrapper-icon">
+                <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -236,7 +236,7 @@
             </li>
             <li class="ingredients-item">
               <div class="ingredients-wrapper">
-                <svg width="24" height="24">
+                <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -251,7 +251,7 @@
             </li>
             <li class="ingredients-item">
               <div class="ingredients-wrapper">
-                <svg width="24" height="24">
+                <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -266,7 +266,7 @@
             </li>
             <li class="ingredients-item">
               <div class="ingredients-wrapper">
-                <svg width="24" height="24">
+                <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
@@ -291,6 +291,11 @@
           </h2>
           <div class="wrapper">
             <div class="lft-site">
+              <div class="lft-site-icon">
+                <svg width="44" height="44">
+                  <use href="./images/icons.svg#icon-play"></use>
+                </svg>
+              </div>
               <img
                 class="instruction-img"
                 src="./images/him.jpg"
@@ -459,37 +464,63 @@
           <h2 class="top-title"><span class="top-word">Top</span> sellers</h2>
           <ul class="top-list">
             <li class="top-item">
-              <img
-                class="top-img"
-                src="./images/topsellers/img-1.jpg"
-                alt="CHOCOLATE WITH NUTS"
-                width="368"
-                height="464"
-              />
+              <div class="top-item-img">
+                <img
+                  class="top-img"
+                  src="./images/topsellers/img-1.jpg"
+                  alt="CHOCOLATE WITH NUTS"
+                  width="368"
+                  height="464"
+                />
+                <p class="top-img-text">
+                  Chocolate with nuts is a delectable combination that brings
+                  together the smoothness of chocolate and the crunchiness of
+                  nuts. Whether it's milk chocolate, dark chocolate, or white
+                  chocolate, the addition of nuts adds a whole new dimension of
+                  flavor and texture.
+                </p>
+              </div>
               <div class="top-item-cont">
                 <h3 class="top-item-title">CHOCOLATE WITH NUTS</h3>
               </div>
             </li>
             <li class="top-item">
-              <img
-                class="top-img"
-                src="./images/topsellers/img-2.jpg"
-                alt="CHOCOLATE WITH FRUITS"
-                width="368"
-                height="464"
-              />
+              <div class="top-item-img">
+                <img
+                  class="top-img"
+                  src="./images/topsellers/img-2.jpg"
+                  alt="CHOCOLATE WITH FRUITS"
+                  width="368"
+                  height="464"
+                />
+                <p class="top-img-text">
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
+                </p>
+              </div>
               <div class="top-item-cont">
                 <h3 class="top-item-title">CHOCOLATE WITH FRUITS</h3>
               </div>
             </li>
             <li class="top-item">
-              <img
-                class="top-img"
-                src="./images/topsellers/img-3.jpg"
-                alt="DARK CHOCOLATE"
-                width="368"
-                height="464"
-              />
+              <div class="top-item-img">
+                <img
+                  class="top-img"
+                  src="./images/topsellers/img-3.jpg"
+                  alt="DARK CHOCOLATE"
+                  width="368"
+                  height="464"
+                />
+                <p class="top-img-text">
+                  Dark chocolate is a rich and indulgent treat that is beloved
+                  by many chocolate enthusiasts. It is made from cocoa beans,
+                  which are roasted, ground, and then processed to produce
+                  chocolate liquor. Dark chocolate contains a higher percentage
+                  of cocoa solids compared to milk chocolate.
+                </p>
+              </div>
               <div class="top-item-cont">
                 <h3 class="top-item-title">DARK CHOCOLATE</h3>
               </div>
@@ -506,48 +537,60 @@
           </h2>
           <ul class="reviews-list">
             <li class="reviews-item">
-              <img
-                class="reviews-img"
-                src="./images/reviews/img-1.png"
-                alt="Victoria Dobrzhanska"
-                width="80"
-                height="80"
-              />
-              <h3 class="reviews-item-title">Victoria Dobrzhanska</h3>
-              <p class="reviews-desc">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
+              <div>
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/img-1.png"
+                  alt="Victoria Dobrzhanska"
+                  width="80"
+                  height="80"
+                />
+              </div>
+              <div class="reviews-item-box">
+                <h3 class="reviews-item-title">Victoria Dobrzhanska</h3>
+                <p class="reviews-desc">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </div>
             </li>
             <li class="reviews-item">
-              <img
-                class="reviews-img"
-                src="./images/reviews/img-2.png"
-                alt="Nazar Babenko"
-                width="80"
-                height="80"
-              />
-              <h3 class="reviews-item-title">Nazar Babenko</h3>
-              <p class="reviews-desc">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
+              <div>
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/img-2.png"
+                  alt="Nazar Babenko"
+                  width="80"
+                  height="80"
+                />
+              </div>
+              <div class="reviews-item-box">
+                <h3 class="reviews-item-title">Nazar Babenko</h3>
+                <p class="reviews-desc">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </div>
             </li>
             <li class="reviews-item">
-              <img
-                class="reviews-img"
-                src="./images/reviews/img-3.png"
-                alt="Olena Kampusch"
-                width="80"
-                height="80"
-              />
-              <h3 class="reviews-item-title">Olena Kampusch</h3>
-              <p class="reviews-desc">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
+              <div>
+                <img
+                  class="reviews-img"
+                  src="./images/reviews/img-3.png"
+                  alt="Olena Kampusch"
+                  width="80"
+                  height="80"
+                />
+              </div>
+              <div class="reviews-item-box">
+                <h3 class="reviews-item-title">Olena Kampusch</h3>
+                <p class="reviews-desc">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </div>
             </li>
           </ul>
           <button type="button" class="btn btn-dark">Leave a review</button>
@@ -573,13 +616,9 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook link"
-                  ><img
-                    class="footer-img"
-                    src="./images/icons/fcb-wht.png"
-                    alt="Icon facebook"
-                    width="24"
-                    height="24"
-                /></a>
+                  ><svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
               </li>
               <li class="footer-item">
                 <a
@@ -588,13 +627,9 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram link"
-                  ><img
-                    class="footer-img"
-                    src="./images/icons/Inst-wht.png"
-                    alt="Icon Instagram"
-                    width="24"
-                    height="24"
-                /></a>
+                  ><svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
               <li class="footer-item">
                 <a
@@ -603,13 +638,9 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter link"
-                  ><img
-                    class="footer-img"
-                    src="./images/icons/twt-wht.png"
-                    alt="Icon Twitter"
-                    width="24"
-                    height="24"
-                /></a>
+                  ><svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
               </li>
             </ul>
           </div>
@@ -631,19 +662,27 @@
             </ul>
           </address>
         </div>
-        <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item">
-              <a class="footer-nav-link" href="index.html">Home</a>
-            </li>
-            <li class="footer-nav-item">
-              <a class="footer-nav-link" href="#made">How it's made?</a>
-            </li>
-            <li class="footer-nav-item">
-              <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="footer-nav-cont">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="index.html">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="#made">How it's made?</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link" href="#reviews"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-subscribe">
+            <input type="email" placeholder="Enter your email" required />
+            <button class="footer-button" type="submit">Subscribe</button>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- #endregion -->
