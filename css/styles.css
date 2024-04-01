@@ -47,6 +47,10 @@ img {
   display: block;
   max-width: 100%;
 }
+
+input {
+  font-family: inherit;
+}
 /* #endregion Base styles */
 /* #region Common styles*/
 .visually-hidden {
@@ -90,6 +94,9 @@ img {
   border-radius: 100px;
   font-weight: 600;
   font-size: 14px;
+
+  transition: 500ms ease-in;
+  transition-property: color, border-color, background-color;
 }
 
 .btn-accent {
@@ -166,6 +173,8 @@ img {
 }
 .header-nav-item {
 }
+
+/* Normal state */
 .header-nav-link {
   display: block;
   padding: 32px 0;
@@ -173,8 +182,17 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
+
+  /* transition-property: color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0s; */
+
+  transition: 500ms ease-in;
+  transition-property: color;
 }
 
+/* Active state */
 .header-nav-link:focus,
 .header-nav-link:hover {
   color: #fd9222;
@@ -197,6 +215,9 @@ img {
   width: 40px;
   height: 40px;
   color: #111;
+
+  transition: 500ms ease-in;
+  transition-property: color, border-color;
 }
 
 .social-link svg {
@@ -282,6 +303,9 @@ img {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+
+  transition: 500ms ease-in;
+  transition-property: color;
 }
 
 .hero-link:hover,
@@ -302,6 +326,9 @@ img {
   border-radius: 50%;
   background-color: #fff;
   color: #fd9222;
+
+  transition: 500ms ease-in;
+  transition-property: color, background-color;
 }
 
 .hero-img svg {
@@ -331,7 +358,23 @@ img {
   gap: 88px;
 }
 .benefits-item {
+  position: relative;
   max-width: 308px;
+}
+
+.benefits-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: -45px;
+
+  transform: translateY(-50%);
+
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 1px;
+  height: 124px;
 }
 
 .benefits-wrapper {
@@ -653,27 +696,28 @@ img {
 }
 
 .top-img-text {
-  padding: 0 40px;
-  padding-top: 178px;
+  padding: 40px;
   color: #fff;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  border-radius: 15px 15px 0 0;
+
   backdrop-filter: blur(15px);
   background: linear-gradient(
     161deg,
     rgba(253, 253, 255, 0.1) 0%,
     rgba(8, 2, 21, 0.1) 100%
   );
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 0ms linear;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: -0.02em;
+  transition: transform 500ms linear;
 }
 
 .top-item:hover .top-img-text {
@@ -705,6 +749,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 91px;
 }
 
 .reviews-word {
@@ -717,9 +762,10 @@ img {
 }
 
 .reviews-item {
-  margin-bottom: 50px;
   position: relative;
+  margin-bottom: 50px;
 }
+
 .reviews-img {
   position: absolute;
   top: -42px;
@@ -862,6 +908,9 @@ img {
   letter-spacing: -0.02em;
   color: #fff;
   padding: 18px 0;
+
+  transition: 500ms ease-in;
+  transition-property: color;
 }
 
 .footer-nav-link:hover,
@@ -895,6 +944,7 @@ img {
   height: 52px;
   background: #fd9222;
   color: #fff;
+  border: none;
 }
 
 /* #endregion */
