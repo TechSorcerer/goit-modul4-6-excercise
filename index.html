@@ -687,7 +687,7 @@
     </footer>
     <!-- #endregion -->
     <!-- #region Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg class="modal-button-icon" width="28" height="28">
@@ -706,10 +706,22 @@
                 type="text"
                 id="user_name"
                 name="user_name"
+                required
+                placeholder="&nbsp"
+                minlength="2"
+                pattern="[a-zA-Z]+\s[a-zA-Z]+"
+                title="Phrase should include 2 words separated by coma"
               />
               <svg class="modal-field-icon orange" width="24" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
+              <svg class="modal-valid-icon" width="24" height="24">
+                <use class="error" href="./images/icons.svg#error"></use>
+                <use class="success" href="./images/icons.svg#success"></use>
+              </svg>
+              <span class="error-text">
+                Phrase should include 2 words separated by a space
+              </span>
             </div>
           </div>
           <div class="modal-wrapper">
@@ -717,9 +729,10 @@
             <div class="modal-field">
               <input
                 class="modal-field-input"
-                type="text"
+                type="email"
                 id="user_email"
                 name="user_email"
+                required
               />
               <svg class="modal-field-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-mail"></use>
@@ -731,9 +744,10 @@
             <div class="modal-field">
               <input
                 class="modal-field-input"
-                type="text"
+                type="tel"
                 id="user_number"
                 name="user_number"
+                required
               />
               <svg class="modal-field-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -750,6 +764,9 @@
                 cols="30"
                 rows="4"
                 placeholder="Enter text"
+                required
+                minlength="10"
+                maxlength="1000"
               ></textarea>
             </div>
           </div>
@@ -757,6 +774,7 @@
             class="agreement-box visually-hidden"
             type="checkbox"
             id="checkbox"
+            required
           />
           <label class="agreement-label" for="checkbox">
             <span class="agreement-checkbox">
@@ -765,7 +783,9 @@
               </svg>
             </span>
             I accept the terms and conditions of the&nbsp;
-            <a class="agreement-checkbox-link" href="#">Privacy Policy</a>
+            <a class="agreement-checkbox-link" href="#" target="_blank"
+              >Privacy Policy</a
+            >
           </label>
           <button type="submit" class="btn btn-accent">Send</button>
         </form>
