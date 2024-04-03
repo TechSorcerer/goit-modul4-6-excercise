@@ -988,7 +988,6 @@ input {
   color: #111;
   background-color: transparent;
   border: none;
-  transition: color 500ms ease-in;
 }
 
 .modal-button-icon:hover,
@@ -998,6 +997,7 @@ input {
 
 .modal-button-icon {
   stroke: currentColor;
+  transition: color 300ms ease-in;
 }
 
 .modal-word {
