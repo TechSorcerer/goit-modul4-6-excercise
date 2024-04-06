@@ -26,7 +26,7 @@
   </head>
   <body>
     <!--#region Header-->
-    <header class="header">
+    <header class="header hide">
       <div class="container">
         <nav class="header-nav">
           <a href="./index.html" class="logo header-logo"
@@ -45,8 +45,13 @@
               <a href="#reviews" class="header-nav-link">Chocolate is loved</a>
             </li>
           </ul>
+          <button class="menu-btn" type="button">
+            <svg class="menu-btn-icon" width="28" height="28">
+              <use href="./images/icons.svg#menu-btn"></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="social">
+        <ul class="social header-social">
           <li class="social-list">
             <a
               class="social-link"
@@ -86,7 +91,7 @@
     <!--#endregion Header-->
     <main>
       <!--#region Hero-->
-      <section class="hero">
+      <section class="hero hide">
         <div class="container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -115,7 +120,7 @@
       </section>
       <!--#endregion Hero-->
       <!--#region Benefits-->
-      <section class="benefits">
+      <section class="benefits hide">
         <div class="container">
           <h2 class="visually-hidden">Chocolate Benefits</h2>
           <ul class="benefits-list">
@@ -167,7 +172,7 @@
       </section>
       <!--#endregion Describtion-->
       <!--#region Ingredients-->
-      <section class="ingredients">
+      <section class="ingredients hide">
         <div class="container">
           <h2 class="ingredients-title">
             It all adds up to one exceptional
@@ -180,13 +185,36 @@
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <img
-                class="ingredients-img"
-                srcset="./images/ingridients/img-1.png"
-                alt="MILK CHOCOLATE"
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingridients/Mob/img-1.png    1x,
+                    ./images/ingridients/Mob/img-1@2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Tab/img-1.png    1x,
+                    ./images/ingridients/Tab/img-1@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Desk/img-1.png    1x,
+                    ./images/ingridients/Desk/img-1@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="ingredients-img"
+                  src="./images/ingridients/img-1.png"
+                  alt="MILK CHOCOLATE"
+                  width="214"
+                  height="160"
+                />
+              </picture>
               <h3 class="ingredients-list-title">MILK CHOCOLATE</h3>
             </li>
             <li class="ingredients-item">
@@ -195,13 +223,40 @@
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <img
-                class="ingredients-img"
-                src="./images/ingridients/img-2.png"
-                alt="MILK"
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingridients/Mob/img-2.png    1x,
+                    ./images/ingridients/Mob/img-2@2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Tab/img-2.png    1x,
+                    ./images/ingridients/Tab/img-2@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Desk/img-2.png    1x,
+                    ./images/ingridients/Desk/img-2@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="ingredients-img"
+                  src="./images/ingridients/img-2.png"
+                  srcset="
+                    ./images/ingridients/img-2.png    1x,
+                    ./images/ingridients/img-2@2x.png 2x
+                  "
+                  alt="MILK"
+                  width="214"
+                  height="160"
+                />
+              </picture>
               <h3 class="ingredients-list-title">MILK</h3>
             </li>
             <li class="ingredients-item">
@@ -210,13 +265,40 @@
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <img
-                class="ingredients-img"
-                src="./images/ingridients/img-3.png"
-                alt="NUTS"
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingridients/Mob/img-3.png    1x,
+                    ./images/ingridients/Mob/img-3@2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Tab/img-3.png    1x,
+                    ./images/ingridients/Tab/img-3@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Desk/img-3.png    1x,
+                    ./images/ingridients/Desk/img-3@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="ingredients-img"
+                  src="./images/ingridients/img-3.png"
+                  srcset="
+                    ./images/ingridients/img-3.png    1x,
+                    ./images/ingridients/img-3@2x.png 2x
+                  "
+                  alt="NUTS"
+                  width="214"
+                  height="160"
+                />
+              </picture>
               <h3 class="ingredients-list-title">NUTS</h3>
             </li>
             <li class="ingredients-item">
@@ -225,58 +307,129 @@
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <img
-                class="ingredients-img"
-                src="./images/ingridients/img-4.png"
-                alt="SEMI - SWEET CHOCOLATE"
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingridients/Mob/img-4.png    1x,
+                    ./images/ingridients/Mob/img-4@2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Tab/img-4.png    1x,
+                    ./images/ingridients/Tab/img-4@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Desk/img-4.png    1x,
+                    ./images/ingridients/Desk/img-4@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="ingredients-img"
+                  src="./images/ingridients/img-4.png"
+                  alt="SEMI - SWEET CHOCOLATE"
+                  width="214"
+                  height="160"
+                />
+              </picture>
               <h3 class="ingredients-list-title">SEMI - SWEET CHOCOLATE</h3>
             </li>
-            <li class="ingredients-item">
+            <li class="ingredients-item hidden">
               <div class="ingredients-wrapper">
                 <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <img
-                class="ingredients-img"
-                src="./images/ingridients/img-5.png"
-                alt="CACAO"
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingridients/Tab/img-5.png    1x,
+                    ./images/ingridients/Tab/img-5@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Desk/img-5.png    1x,
+                    ./images/ingridients/Desk/img-5@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="ingredients-img"
+                  src="./images/ingridients/img-5.png"
+                  alt="CACAO"
+                  width="214"
+                  height="160"
+                />
+              </picture>
               <h3 class="ingredients-list-title">CACAO</h3>
             </li>
-            <li class="ingredients-item">
+            <li class="ingredients-item hidden">
               <div class="ingredients-wrapper">
                 <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <img
-                class="ingredients-img"
-                src="./images/ingridients/img-6.png"
-                alt="RASPBERRY"
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingridients/Tab/img-6.png    1x,
+                    ./images/ingridients/Tab/img-6@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Desk/img-6.png    1x,
+                    ./images/ingridients/Desk/img-6@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="ingredients-img"
+                  src="./images/ingridients/img-6.png"
+                  alt="RASPBERRY"
+                  width="214"
+                  height="160"
+                />
+              </picture>
               <h3 class="ingredients-list-title">RASPBERRY</h3>
             </li>
-            <li class="ingredients-item">
+            <li class="ingredients-item hidden">
               <div class="ingredients-wrapper">
                 <svg width="24" height="24" class="ing-wrapper-icon">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </div>
-              <img
-                class="ingredients-img"
-                src="./images/ingridients/img-7.png"
-                alt="COCONUT OIL"
-                width="214"
-                height="160"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ingridients/Tab/img-7.png    1x,
+                    ./images/ingridients/Tab/img-7@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ingridients/Desk/img-7.png    1x,
+                    ./images/ingridients/Desk/img-7@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="ingredients-img"
+                  src="./images/ingridients/img-7.png"
+                  alt="RASPBERRY"
+                  width="214"
+                  height="160"
+                />
+              </picture>
               <h3 class="ingredients-list-title">COCONUT OIL</h3>
             </li>
           </ul>
@@ -284,7 +437,7 @@
       </section>
       <!--#endregion Ingredients-->
       <!--#region Instruction-->
-      <section id="made" class="instruction">
+      <section id="made" class="instruction hide">
         <div class="container">
           <h2 class="instruction-title">
             How it's <span class="instruction-word">made</span>?
@@ -292,17 +445,40 @@
           <div class="wrapper">
             <div class="lft-site">
               <div class="lft-site-icon">
-                <svg width="44" height="44">
+                <svg width="35" height="35" class="lft-site-svg">
                   <use href="./images/icons.svg#icon-play"></use>
                 </svg>
               </div>
-              <img
-                class="instruction-img"
-                src="./images/him.jpg"
-                alt="how it's made?"
-                width="600"
-                height="400"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/instruction/imageinstruction_desk@1x.jpg 1x,
+                    ./images/instruction/imageinstruction_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/instruction/imageinstruction_tab@1x.jpg 1x,
+                    ./images/instruction/imageinstruction_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/instruction/imageinstruction_mob@1x.jpg 1x,
+                    ./images/instruction/imageinstruction_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="instruction-img"
+                  src="./images/him.jpg"
+                  alt="how it's made?"
+                  width="600"
+                  height="400"
+                />
+              </picture>
             </div>
             <div class="rgh-site">
               <h3 class="instruction-desc">
@@ -336,7 +512,7 @@
       </section>
       <!--#endregion Instruction-->
       <!--#region Products-->
-      <section class="produscts">
+      <section class="products hide">
         <div class="container">
           <h2 class="products-title">
             Our <span class="products-word">products</span>
@@ -346,6 +522,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-1.jpg"
+                srcset="
+                  ./images/products/img-1.jpg    1x,
+                  ./images/products/img-1@2x.jpg 2x
+                "
                 alt="Orange "
                 width="230"
                 height="201"
@@ -360,6 +540,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-2.jpg"
+                srcset="
+                  ./images/products/img-2.jpg    1x,
+                  ./images/products/img-2@2x.jpg 2x
+                "
                 alt="Apple&Cranberry"
                 width="230"
                 height="201"
@@ -374,6 +558,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-3.jpg"
+                srcset="
+                  ./images/products/img-3.jpg    1x,
+                  ./images/products/img-3@2x.jpg 2x
+                "
                 alt="Lime&Sea salt"
                 width="230"
                 height="201"
@@ -388,6 +576,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-4.jpg"
+                srcset="
+                  ./images/products/img-4.jpg    1x,
+                  ./images/products/img-4@2x.jpg 2x
+                "
                 alt="Pineapple"
                 width="230"
                 height="201"
@@ -402,6 +594,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-5.jpg"
+                srcset="
+                  ./images/products/img-5.jpg    1x,
+                  ./images/products/img-5@2x.jpg 2x
+                "
                 alt="Classic"
                 width="230"
                 height="201"
@@ -416,6 +612,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-6.jpg"
+                srcset="
+                  ./images/products/img-6.jpg    1x,
+                  ./images/products/img-6@2x.jpg 2x
+                "
                 alt="Honey"
                 width="230"
                 height="201"
@@ -430,6 +630,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-7.jpg"
+                srcset="
+                  ./images/products/img-7.jpg    1x,
+                  ./images/products/img-7@2x.jpg 2x
+                "
                 alt="Roasted fruits"
                 width="230"
                 height="201"
@@ -444,6 +648,10 @@
               <img
                 class="products-img"
                 src="./images/products/img-8.jpg"
+                srcset="
+                  ./images/products/img-8.jpg    1x,
+                  ./images/products/img-8@2x.jpg 2x
+                "
                 alt="Classic"
                 width="230"
                 height="201"
@@ -530,7 +738,7 @@
       </section>
       <!--#endregion Top-->
       <!--#region Reviews-->
-      <section id="reviews" class="reviews">
+      <section id="reviews" class="reviews hide">
         <div class="container">
           <h2 class="reviews-title">
             <span class="reviews-word">Chocolate</span> is loved
@@ -599,7 +807,7 @@
       <!--#endregion Reviews-->
     </main>
     <!-- #region Footer -->
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container">
         <div class="footer-cont">
           <h2 class="footer-title">
@@ -687,7 +895,7 @@
     </footer>
     <!-- #endregion -->
     <!-- #region Modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hide">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg class="modal-button-icon" width="28" height="28">
@@ -793,7 +1001,7 @@
     </div>
     <!-- #endregion Modal -->
     <!-- #region Mobile Menu -->
-    <div class="mobile-menu">
+    <div class="mobile-menu hide">
       <div class="mobile-menu-wrapper">
         <button
           class="mobile-menu-button"
