@@ -1332,10 +1332,22 @@ input {
   padding: 8px;
   width: 40px;
   height: 40px;
+  transition: 500ms ease-in;
+  transition-property: fill, border-color;
+}
+
+.footer-link:hover,
+.footer-link:hover svg,
+.footer-link:focus,
+.footer-link:focus svg {
+  fill: #fd9222;
+  border-color: #fd9222;
 }
 
 .footer-link svg {
   fill: #fff;
+  transition: 500ms ease-in;
+  transition-property: fill;
 }
 
 .footer-list-address {
@@ -1481,6 +1493,8 @@ input {
   border: none;
   font-weight: 600;
   font-size: 14px;
+  transition: 500ms ease-in;
+  transition-property: color, background-color;
 }
 
 @media only screen and (min-width: 768px) {
