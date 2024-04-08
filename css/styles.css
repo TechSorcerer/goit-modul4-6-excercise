@@ -74,11 +74,13 @@ input {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 0 32px;
   }
 }
 
@@ -169,6 +171,7 @@ input {
 .header .container {
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -316,6 +319,13 @@ input {
 /* #region Hero + */
 .hero {
   margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 0 32px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -576,9 +586,21 @@ input {
 
 /* #region Ingredients + */
 .ingredients {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding: 80px 0;
 }
+
+@media only screen and (min-width: 768px) {
+  .ingredients {
+    padding: 100px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ingredients .container {
+    padding: 0 32px;
+  }
+}
+
 .ingredients-title {
   width: 283px;
   font-weight: 600;
@@ -854,7 +876,13 @@ input {
 
 /* #region Products + */
 .products {
-  padding: 60px 0;
+  padding: 80px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .products {
+    padding: 100px 0;
+  }
 }
 
 .products-title {
@@ -884,7 +912,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .products-list {
     column-gap: 18px;
     row-gap: 24px;
@@ -955,7 +983,6 @@ input {
 
 /* #region Top + */
 .top {
-  padding: 60px 0;
 }
 
 .top .container {
@@ -1080,10 +1107,25 @@ input {
 }
 /* #endregion */
 
-/* #region Reviews*/
+/* #region Reviews + */
 .reviews {
-  padding-top: 60px;
-  padding-bottom: 120px;
+  padding: 80px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 0;
+  }
+}
+
+.reviews .container {
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews .container {
+    padding: 0 32px;
+  }
 }
 
 .reviews-title {
@@ -1094,7 +1136,13 @@ input {
   text-transform: uppercase;
   text-align: center;
   color: #111;
-  margin-bottom: 91px;
+  margin-bottom: 74px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-title {
+    margin-bottom: 91px;
+  }
 }
 
 .reviews-word {
@@ -1103,12 +1151,37 @@ input {
 
 .reviews-list {
   display: flex;
-  gap: 28px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-list {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviews-list {
+    gap: 28px;
+  }
 }
 
 .reviews-item {
   position: relative;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .reviews-item:nth-child(n + 2) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .reviews-item:nth-child(n + 3) {
+    display: none;
+  }
 }
 
 .reviews-img {
@@ -1121,7 +1194,8 @@ input {
 .reviews-item-box {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  width: 360px;
+  width: 100%;
+  /* width: 360px; */
   height: 200px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: #fff;
@@ -1132,16 +1206,17 @@ input {
   margin-top: 56px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 1.33333;
+  line-height: 1.33;
   text-align: center;
   color: #111;
 }
 .reviews-desc {
-  margin: 24px;
+  margin: 18px;
+  /* margin: 24px; */
   margin-top: 24px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
@@ -1149,7 +1224,7 @@ input {
 }
 /* #endregion */
 
-/* #region Footer*/
+/* #region Footer + */
 .footer {
   background-color: #1e1823;
   padding: 32px 0;
@@ -1157,7 +1232,7 @@ input {
 
 @media only screen and (min-width: 768px) {
   .footer {
-    padding: 50px 0;
+    padding: 50px 32px;
   }
 }
 
@@ -1360,12 +1435,12 @@ input {
 
 .footer-subscribe {
   display: flex;
-  gap: 14px;
+  gap: 8px;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-subscribe {
-    gap: 8px;
+    gap: 14px;
   }
 }
 
@@ -1437,9 +1512,9 @@ input {
 }
 
 .backdrop.is-open {
-  /* opacity: 1;
+  opacity: 1;
   pointer-events: initial;
-  visibility: visible; */
+  visibility: visible;
 }
 
 .modal {
@@ -1447,21 +1522,36 @@ input {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 517px;
-  min-height: 794px;
-  padding: 40px;
+  width: 311px;
+  min-height: 622px;
+  padding: 32px 24px;
   border-radius: 15px;
   background: #fafafa;
 }
 
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 517px;
+    min-height: 794px;
+    padding: 40px;
+  }
+}
+
 .modal-button {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   padding: 0;
   color: #111;
   background-color: transparent;
   border: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-button {
+    top: 24px;
+    right: 24px;
+  }
 }
 
 .modal-button-icon:hover,
@@ -1474,6 +1564,12 @@ input {
   transition: color 300ms ease-in;
 }
 
+@media only screen and (max-width: 767px) {
+  .modal-block {
+    display: block;
+  }
+}
+
 .modal-word {
   color: #fd9222;
 }
@@ -1481,11 +1577,19 @@ input {
 .modal-caption {
   font-weight: 600;
   margin-bottom: 40px;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  width: 298px;
+  width: 255px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-caption {
+    font-size: 24px;
+    line-height: 1.17;
+    width: 298px;
+  }
 }
 
 .modal-form {
@@ -1508,17 +1612,24 @@ input {
 .modal-message {
   width: 100%;
   height: 137px;
-  padding: 22px 24px;
+  padding: 14px 18px;
   resize: none;
   background: transparent;
   outline: transparent;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
 
-  font-size: 18px;
+  font-size: 13px;
   letter-spacing: -0.02em;
   color: #404040;
   transition: border-color 300ms ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-message {
+    padding: 22px 24px;
+    font-size: 18px;
+  }
 }
 
 .modal-message::placeholder {
@@ -1531,14 +1642,22 @@ input {
 
 .modal-field-input {
   width: 100%;
-  height: 68px;
-  padding: 22px 62px;
+  height: 45px;
+  padding: 15px 43px;
   color: #404040;
   background: transparent;
   outline: transparent;
   border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
   transition: border-color 300ms ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-field-input {
+    height: 68px;
+    padding: 22px 62px;
+  }
 }
 
 .modal-field-input:focus {
@@ -1548,13 +1667,20 @@ input {
 .modal-field-icon {
   position: absolute;
   top: 50%;
-  left: 24px;
+  left: 18px;
   transform: translateY(-50%);
   stroke: #404040;
   fill: transparent;
   transition: fill 300ms ease-in, stroke 300ms ease-in;
 }
 
+@media only screen and (min-width: 768px) {
+  .modal-field-icon {
+    left: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
 .modal-field-input:focus + .modal-field-icon {
   fill: transparent;
   stroke: #fd9222;
@@ -1624,14 +1750,18 @@ input {
 }
 
 .agreement-label {
+  display: flex;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.33;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
 }
 
 .agreement-checkbox {
   display: inline-flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 20px;
@@ -1640,7 +1770,6 @@ input {
   border: 1px solid rgba(17, 17, 17, 0.14);
   cursor: pointer;
   margin-right: 12px;
-  margin-bottom: 40px;
   background-color: transparent;
   transition: 300ms ease-in;
   transition-duration: background-color, border;
